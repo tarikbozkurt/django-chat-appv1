@@ -1,0 +1,36 @@
+
+{%  extends "chat/main/base.html" %}
+{%  block content %}
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-4 col-md-4 col-sm-2 col-xs-3 ">
+
+
+            </div>
+            <div id="loginOpacity" class="col-lg-4 col-md-4 col-sm-8 col-xs-8" style="position: center; margin-top: 250px;">
+
+                            <h2 id="loginText" >Log In</h2>
+
+                            <form method="post">
+                                {%  csrf_token %}
+
+                                <input class="login_name" type="text" name="username" placeholder="username" style="position: relative;">
+
+                                <input class="login_password" type="password" name="password" placeholder="password"style="position: relative;">
+
+                                <button class="LoginButton" type="submit">Login</button>
+                            </form>
+
+
+
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-2 col-xs-1">
+
+
+            </div>
+        </div>
+
+
+     </div>
+{%  endblock content %}
